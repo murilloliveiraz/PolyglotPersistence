@@ -1,0 +1,6 @@
+@PolyglotPersistence_HostAddress = http://localhost:5023
+
+GET {{PolyglotPersistence_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
