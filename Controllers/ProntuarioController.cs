@@ -16,10 +16,11 @@ namespace PolyglotPersistence.Controllers
             _prontuarioService = prontuarioService;
         }
 
-        [HttpPost("{id}/registros")]
+        [HttpPost("{prontuarioId}/registros")]
         public async Task<IActionResult> AdicionarRegistro(int prontuarioId, [FromBody] NovoRegistroDTO dto)
         {
-            await _prontuarioService.AdicionarRegistro(prontuarioId, dto.Tipo, BsonDocument.Parse(dto.Conteudo));
+            Console.WriteLine($"Conteúdo recebido: {dto.Conteudo}");
+            await _prontuarioService.AdicionarRegistro(prontuarioId, dto);
             return Ok();
         }
 

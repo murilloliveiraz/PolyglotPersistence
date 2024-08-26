@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PolyglotPersistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8083ff1c1561e0832fd9861bf47e9a1f404a8157")]
 [assembly: System.Reflection.AssemblyProductAttribute("PolyglotPersistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PolyglotPersistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

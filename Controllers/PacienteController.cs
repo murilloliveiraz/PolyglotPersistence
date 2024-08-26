@@ -1,5 +1,7 @@
 using Context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 using PolyglotPersistence.Domain;
 using PolyglotPersistence.Services;
 
@@ -18,7 +20,7 @@ namespace PolyglotPersistence.Controllers
         }
 
         [HttpPost]
-        public async Task<Paciente> CreatePaciente(CreatePacienteModel model)
+        public async Task<IActionResult> CreatePaciente(CreatePacienteModel model)
         {
             
             var paciente = new Paciente
@@ -27,8 +29,15 @@ namespace PolyglotPersistence.Controllers
             };
             await _context.Pacientes.AddAsync(paciente);
             await _context.SaveChangesAsync();
-            var prontuario = await _prontuarioService.CriarProntuario(paciente.Id);            
-            return paciente;
+            var prontuario = await _prontuarioService.CriarProntuario(paciente.Id);
+            return Ok(paciente);
+        }
+        
+        [HttpGet]
+        public async Task<IActionResult> GetPacientes()
+        {
+            var pacientes = await _context.Pacientes.Include(p => p.Prontuario).ToListAsync();
+            return Ok(pacientes);
         }
 
     }

@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj": {}
+    "C:\\Users\\david.soares\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj": {
+    "C:\\Users\\david.soares\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj",
+        "projectUniqueName": "C:\\Users\\david.soares\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj",
         "projectName": "PolyglotPersistence",
-        "projectPath": "C:\\Users\\dev\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev\\Downloads\\PolyglotPersistence\\obj\\",
+        "projectPath": "C:\\Users\\david.soares\\Downloads\\PolyglotPersistence\\PolyglotPersistence.csproj",
+        "packagesPath": "C:\\Users\\david.soares\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david.soares\\Downloads\\PolyglotPersistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\david.soares\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -95,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
